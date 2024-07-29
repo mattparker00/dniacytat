@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cytat Codzienny</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="motto"></h1>
+    </div>
+
+    <script>
+        const hasla = [
+            
+            "Kota w worku mam kupować?",
+            "Jak nie zobaczę to nie kupię, straciliście właśnie klienta, żegnam",
+            "Coś mi trzeszczy w telefonie jak nim telepie",
+            "A pornuski na nim pójdą?hehe ",
+	    "Kiedy dojadą do was mi band 9",
+	    "To proszę mi zamówić u producenta",
+	    "Czy wie Pan co to jest wszechświat wielowymiarowy?",
+            "A poleci Pan dobry telefon?",
+	    "W sklepie z telefonami: Chciałbym kupić koktajl",
+	    "A dlaczego macie drożej? ",
+	    "Dlaczego są dwie ceny?",
+	    "Czy macie niebieski czajnik?",
+	    "Jakby Pan przeczytał choć jedną książkę o psychologii wiedziałby Pan jak mi pomóc.",
+	    "Przepraszam, Pan tu pracuje?",
+	    "A macie model wzorowany na lambordżini?",
+	    "Co pan może powiedzieć o tej golarce?",
+	    "Pani to jakby z więzienia wyszła",
+	    "Niemożliwe, że one się ładują 67W, WIE PAN CZYM SĄ WATY?????",
+	    "Kartą czy gotówką? - TAK",
+	    "Paragon/Faktura? - I to i to",
+	    "NO TO STRACILI PAŃSTWO KLIENTA",
+	    "Ten odkurzacz dobrze ssie?",
+	    "Macie kondonik na telefon?",
+	    "Mam nietypowe pytanie",
+	    "Nie jestem konsumentem tylko osobą fizyczną",
+	    "Często się psuje?",
+	    "Za gotówkę będzie taniej?",
+	    "Ja jestem waszym abonamentem",
+	    "Macie atrapy?",
+ 	    "Jestem stałym klientem powinienem dostać to za darmo",
+	    "To co jakiś rabacik? hehe",
+	    "Chce tanio i dobrze",
+	    "Jak mnie Pan/Pani zachęci do zakupu?",
+	    "Zna się Pan/Pani na tym?",
+	    "Ostatnio było taniej",
+	    "Kiedy będzie promocja?",
+	    "Jak za pół roku przyjdę to będzie tańszy??",
+	    "Macie jakieś gratisy?",
+	    "Jak kupie dwa to będzie taniej?",
+	    "Na stronie macie taniej",
+	    "To ja pójdę do konkurencji zobaczyć",
+	    "A TE SLUCHAWKI BEDA DOBRE???",
+	    "Czy ten zegarek wyświetla informacje o amerykańskiej giełdzie?",
+	    "Sklep z butami: A Pani to by chciała w używanych majtkach chodzić?",
+	    "Loda też robi, że taki drogi ten Telewizor?",
+	    "Jaką ilość promieniowania rakotwórczego emituje ten smartfon?",
+	    "A ten pistolet do masażu do czego służy?",
+	    "A dlaczego państwo tego nie mają?",
+	    "Chcę rozmawiać z kierownikiem!",
+	    "Ale to jest chujowe, ja chcę zwrot",
+	    "Ale drogo tu macie",
+	    "Znalazłem taniej",
+	    "A co robi ten czajnik?",
+            "Chciałabym złożyć reklamację, bo ten czajnik bucha parą jak się woda gotuje",
+	    "A jaki to smak ten malinowy sorbet???",
+            "RATY: Dochody ma pan z umowy o pracę? - Nie, z zasiłku dla bezrobotnych",
+            "Czy te długopisy łączą się z aplikacją?",
+	    "Czy ten czajnik robi dobrą kawe?",
+            "Ile klawiszy ma ta klawiatura?",
+	    "Na tych robotach sprzątajacych można jeździć?",
+
+
+
+
+
+
+        ];
+
+        function losoweHaslo() {
+            const indeks = Math.floor(Math.random() * hasla.length);
+            return hasla[indeks];
+        }
+
+        document.getElementById('motto').textContent = losoweHaslo();
+    </script>
+</body>
+</html>
